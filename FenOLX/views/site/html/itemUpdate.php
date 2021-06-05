@@ -1,6 +1,6 @@
 <?php
 echo "
-<form action='" . APPLICATION_PATH . "index.php?controller=items&action=update' method='post'>
+<form action='" . APPLICATION_PATH . "index.php?controller=items&action=update' method='post' enctype='multipart/form-data'>
     <input style='display: none' name='id' value='$data->id'>
     <label>Item type</label>
     <input type='text' name='item' value='$data->item'><br>
@@ -12,7 +12,9 @@ echo "
     <input type='text' name='price' value='$data->price'><br>
     <label>Size</label>
     <input type='text' name='razmer' value='$data->razmer'><br>
-    <label>Thumbnail</label>
+    <label>Contacts</label>
+    <input type='text' name='contact' value='$data->contact'><br>
+    <label>Your Picture file name</label>
     <input type='text' name='thumbnail' value='$data->thumbnail'><br>
     <button name='update' value='true'>Update</button>
 </form>
@@ -23,7 +25,7 @@ echo "
         color:white;
     }
     body {
-        background-image: url("http://excelpro.soccer/wp-content/uploads/2020/09/Epic-Soccer-Training-Review-29.jpg") ;
+        background-image: url("https://live.staticflickr.com/2877/33823450815_411667305b_b.jpg") ;
         background-attachment: fixed;
         background-size: 100% 100%;
         background-repeat: no-repeat;

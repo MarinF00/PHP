@@ -24,8 +24,8 @@ class ItemModel extends BaseModel
         return $this->itemRepository->getAll();
     }
 
-    public function search($topic) {
-        return $this->itemRepository->getAllByTopic($topic);
+    public function search($name) {
+        return $this->itemRepository->getAllByName($name);
     }
 
     public function update($data)

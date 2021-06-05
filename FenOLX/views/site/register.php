@@ -52,7 +52,7 @@
 </html>
 <style>
     body {
-        background-image: url("http://excelpro.soccer/wp-content/uploads/2020/09/Epic-Soccer-Training-Review-29.jpg") ;
+        background-image: url("https://live.staticflickr.com/2877/33823450815_411667305b_b.jpg") ;
         background-attachment: fixed;
         background-size: 100% 100%;
         background-repeat: no-repeat;

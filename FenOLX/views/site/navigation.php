@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark " style="background-color: darkred;">
     <div class="container-fluid">
         <a style="color:white;" class="nav-link" href="<?php echo APPLICATION_PATH?>index.php"><h1>MUFC OLX</h1></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,9 +25,13 @@
                     <a class="nav-link" aria-current="page" href="<?php echo APPLICATION_PATH?>index.php">Home</a>
                 </li>
 
+
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo APPLICATION_PATH?>index.php?controller=items&action=listAll">Items</a>
                     </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo APPLICATION_PATH?>index.php?controller=items&action=create">Sell item</a>
+                </li>
 
 
                 <?php
@@ -52,6 +56,8 @@
     </div>
 </nav>
 </body>
+
+
 
 
 
