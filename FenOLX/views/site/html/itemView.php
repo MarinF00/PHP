@@ -64,14 +64,25 @@ if(!empty($_SESSION) && !empty($_SESSION["user_role"]) && strcmp($_SESSION["user
         justify-content: center;
         align-items: center;
         border:2px solid black;
-        padding:15px;
+        padding:10px;
         background-color: #f5f186;
         background-image: linear-gradient(315deg, darkred 0%, #000000 130%);
         border-radius: 10px;
         margin:10px;
     }
     .myButton {
-
+        margin-bottom: 40px;
+        background-color: lightgreen;
+        color: black;
+        font-weight: bolder;
+        border-color: lightgreen;
+        border-radius: 10%;
+    }
+    .myButton:hover {
+        background-color: black;
+        color:darkred;
+        font-weight: bolder;
+        border-color: black;
     }
 
 

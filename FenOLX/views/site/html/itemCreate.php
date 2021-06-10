@@ -31,7 +31,7 @@ echo "
         <input name='thumbnail' type='file' class='form-control'  placeholder='Picture'>
     </div>
     
-    <button class='btn btn-primary' name='create' value='true'>Create</button>
+    <button class='btn1 btn-primary' name='create' value='true'>Create</button>
     
     </div>
 </form>
@@ -62,17 +62,18 @@ echo "
         display: flex;
 
     }
-    .btn {
+    .btn1 {
         margin-top: 20px;
         background-color: lightgreen;
         color: black;
         font-weight: bolder;
         border-color: lightgreen;
+        border-radius: 10%;
     }
-    .btn:hover {
-        background-color: darkgreen;
-        color:white;
+    .btn1:hover {
+        background-color: black;
+        color:darkred;
         font-weight: bolder;
-        border-color: darkgreen;
+        border-color: black;
     }
 </style>
