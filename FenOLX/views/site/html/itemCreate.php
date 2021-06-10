@@ -4,31 +4,31 @@ echo "
 <form action='" . APPLICATION_PATH . "index.php?controller=items&action=create' method='post' enctype='multipart/form-data'>
 <div class='hello'>
     <div class='form-group'>
-        <label for='inputEmail'>Type</label>
-        <input name='item' type='email' class='form-control'  placeholder='Type'>
+        <label for='type'>Type</label>
+        <input name='item' type='text' class='form-control'  placeholder='Type'>
     </div>
     <div class='form-group'>
-        <label for='inputPassword'>Description</label>
+        <label for='description'>Description</label>
         <textarea rows='4' cols='59' name='description'></textarea><br>
     </div>
         <div class='form-group'>
-        <label for='inputPassword'>Gender</label>
-        <input name='gender' type='password' class='form-control'  placeholder='Gender'>
+        <label for='gender'>Gender</label>
+        <input name='gender' type='text' class='form-control'  placeholder='Gender'>
     </div>
         <div class='form-group'>
-        <label for='inputPassword'>Price</label>
-        <input name='price' type='password' class='form-control'  placeholder='Price'>
+        <label for='price'>Price</label>
+        <input name='price' type='text' class='form-control'  placeholder='Price'>
     </div>
         <div class='form-group'>
-        <label  for='inputPassword'>Size</label>
-        <input name='razmer' type='password' class='form-control'  placeholder='Size'>
+        <label  for='size'>Size</label>
+        <input name='razmer' type='text' class='form-control'  placeholder='Size'>
     </div>    <div class='form-group'>
-        <label for='inputPassword'>Contact</label>
-        <input name='contact' type='password' class='form-control'  placeholder='Contact'>
+        <label for='contacts'>Contacts</label>
+        <input name='contact' type='text' class='form-control'  placeholder='Contact'>
     </div>
         <div class='form-group'>
-        <label for='inputPassword'>Thumbnail</label>
-        <input name='thumbnail' type='file' class='form-control'  placeholder='Thumbnail'>
+        <label for='picture'>Thumbnail</label>
+        <input name='thumbnail' type='file' class='form-control'  placeholder='Picture'>
     </div>
     
     <button class='btn btn-primary' name='create' value='true'>Create</button>

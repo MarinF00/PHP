@@ -34,28 +34,41 @@
                 </li>
 
 
-                <?php
-                echo "<form class='d-flex' '
-                        
-                      action='" . APPLICATION_PATH . "index.php?login=true' method='post'>
-                        <input class='form-control me-2' type='submit' value='";
-                echo (!empty($_SESSION["uid"])) ? "Logout" : "Login";
-                echo "'>
-                    </form>
-                ";
-                ?>
-
 
 
             </ul>
 
+             <div class="user">
+                <p> Welcome <?php if (!empty($_SESSION) && !empty($_SESSION["full_name"])) echo $_SESSION["full_name"];?></p>
+             </div>
 
+
+            <?php
+            echo "<form class='d-flex' '
+                        
+                      action='" . APPLICATION_PATH . "index.php?login=true' method='post'>
+                        <input class='form-control me-2' type='submit' value='";
+            echo (!empty($_SESSION["uid"])) ? "Logout" : "Login";
+            echo "'>
+                    </form>
+                ";
+            ?>
 
 
         </div>
     </div>
 </nav>
 </body>
+<style>
+
+.user {
+    margin-right: 10px;
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 15px;
+    color: white;
+}
+    </style>
 
 
 

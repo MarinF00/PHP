@@ -14,17 +14,21 @@ require_once "navigation.php";
 
     <div class="wrapper fadeInDown">
         <div id="formContent">
-
+            <h3>Login to MUFC OLX Shop</h3>
             <form action="<?php echo APPLICATION_PATH?>index.php" method="post">
                 <input type="text" id="login" class="fadeIn second" name="username" placeholder="username">
                 <input type="password" id="password" class="fadeIn third" name="password" placeholder="password">
-                <input type="submit" class="fadeIn fourth" value="Login"/>
+                <br>
+                <button  type="submit" class="loginButton fadeIn fourth" value="Login">Login</button>
                 <a href="<?php echo APPLICATION_PATH?>index.php?register=true">No registration?</a>
             </form>
+            <h4>Created by Marin Filipov</h4>
         </div>
     </div>
 
-
+<?php
+require_once "footer.php";
+?>
 </body>
 </html>
 <style>
@@ -50,6 +54,14 @@ require_once "navigation.php";
         margin: 40px 8px 10px 8px;
         color: #cccccc;
     }
+    .loginButton {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    h3 {
+        margin-bottom: 30px;
+    }
+
 
 
 
@@ -63,19 +75,24 @@ require_once "navigation.php";
         width: 100%;
         min-height: 100%;
         padding: 20px;
+
     }
 
     #formContent {
         -webkit-border-radius: 10px 10px 10px 10px;
         border-radius: 10px 10px 10px 10px;
-        background: #fff;
-        padding: 30px;
         width: 90%;
         max-width: 450px;
         position: relative;
         -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
         box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
         text-align: center;
+        background-color: #f5f186;
+        background-image: linear-gradient(315deg, darkred 0%, #000000 130%);
+        height: 300px;
+        justify-items: center;
+        padding-top: 80px;
+        color:whitesmoke;
     }
     .fadeInDown {
         -webkit-animation-name: fadeInDown;
