@@ -14,7 +14,9 @@ $data->razmer<br>
 <label>Contacts:</label>
 $data->contact<br>
 <label>Thumbnail</label><br>
-<img width='300px' src=".IMG_PATH."$data->thumbnail>
+<img width='300px' src=".IMG_PATH."$data->thumbnail>";
+if(!empty($_SESSION) && !empty($_SESSION["user_role"]) && strcmp($_SESSION["user_role"],"admin") ===0)
+                    echo "
 <form action='" . APPLICATION_PATH . "index.php?controller=items&action=update&item_id=$data->id' method='post'>
     <button type='submit'>Update</button>
 </form>
@@ -40,6 +42,7 @@ $data->contact<br>
     h1 {
         color:white;
     }
+
 
 
 

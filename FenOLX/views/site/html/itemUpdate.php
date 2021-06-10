@@ -16,10 +16,18 @@ echo "
     <input type='text' name='contact' value='$data->contact'><br>
     <label>Your Picture file name</label>
     <input type='text' name='thumbnail' value='$data->thumbnail'><br>
+    </form>
+    ";
+
+if(!empty($_SESSION) && !empty($_SESSION["user_role"]) && strcmp($_SESSION["user_role"],"admin") !==0)
+    echo "
+    <form>
     <button name='update' value='true'>Update</button>
-</form>
+    </form>
 ";
 ?>
+
+
 <style>
     label {
         color:white;

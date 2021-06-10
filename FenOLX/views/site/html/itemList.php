@@ -20,9 +20,15 @@ if (is_array($data)) {
      <form action='" . APPLICATION_PATH ."index.php?controller=items&action=view' method='post'>
                     <button class='btn btn-primary' name='item_id' value='$item->id'>View</button>
                 </form>
+                ";
+                if(!empty($_SESSION) && !empty($_SESSION["user_role"]) && strcmp($_SESSION["user_role"],"admin") ===0)
+                    echo "
                  <form action='" . APPLICATION_PATH ."index.php?controller=items&action=delete' method='post'>
                     <button class='btn btn-primary' id='delete' name='item_id' value='$item->id'>Delete</button>
-                </form>
+                </form>";
+
+echo"
+                
   </div>
 </div>";
     }
@@ -30,7 +36,8 @@ if (is_array($data)) {
 
 echo "  </tbody>
     </table>
-</section>
+</section>"
+    ?>
 <style>
 body {
 background-repeat: no-repeat;

@@ -42,7 +42,13 @@
                                         <input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
                                     </div>
                                 </div>
-
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="hidden" name="user_role"  class="form-control input-sm" placeholder="Role">
+                                    </div>
+                                </div>
                             </div>
 
                             <input type="submit" name="sign_up" value="Sign Up"/>

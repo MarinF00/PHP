@@ -32,6 +32,7 @@ class Authentication
                 if (!empty($user)) {
                     $_SESSION["uid"] = $user->id;
                     $_SESSION["full_name"] = $user->first_name . " " . $user->last_name;
+                    $_SESSION["user_role"] = $user->user_role;
                     return true;
                 }
             }

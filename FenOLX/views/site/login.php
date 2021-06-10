@@ -8,7 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-
+<?php
+require_once "navigation.php";
+?>
 
     <div class="wrapper fadeInDown">
         <div id="formContent">
