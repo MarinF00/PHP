@@ -21,7 +21,7 @@ $_POST["thumbnail"] = $file_name;
 }
 
 $this->itemModel->create($_POST);
-header("Location: index.php?controllers=items&action=listAll");
+header("Location: index.php?controller=items&action=listAll");
 } else {
 return true;
 }
@@ -51,7 +51,7 @@ return false;
 public function update() {
 if (!empty($_POST) && !empty($_POST["update"])) {
 $this->itemModel->update($_POST);
-header("Location: index.php?controllers=items&action=update&item_id=" . $_POST["id"]);
+header("Location: index.php?controller=items&action=listAll");
 } else if (!empty($_GET) && !empty($_GET["item_id"])) {
 return $this->itemModel->view($_GET["item_id"]);
 }
@@ -60,7 +60,7 @@ return $this->itemModel->view($_GET["item_id"]);
 public function delete() {
 if (!empty($_POST) && !empty($_POST["item_id"])) {
 $this->itemModel->delete($_POST["item_id"]);
-header("Location: index.php?controllers=items&action=listAll");
+header("Location: index.php?controller=items&action=listAll");
 } else {
 return false;
 }

@@ -5,14 +5,15 @@ class UserRepository extends Db
 {
     public function create($data) {
         $sql = "
-            INSERT INTO users(id, username, first_name, last_name, password)
-            VALUES(NULL, :username, :first_name, :last_name, :password)
+            INSERT INTO users(id, username, first_name, last_name, password,user_role)
+            VALUES(NULL, :username, :first_name, :last_name, :password,'user')
         ";
         $stmt = $this->conn->prepare($sql);
         $stmt->bindValue(":username", $data["username"], PDO::PARAM_STR);
         $stmt->bindValue(":first_name", $data["first_name"], PDO::PARAM_STR);
         $stmt->bindValue(":last_name", $data["last_name"], PDO::PARAM_STR);
         $stmt->bindValue(":password", $data["password"], PDO::PARAM_STR);
+
         return $stmt->execute();
     }
 
