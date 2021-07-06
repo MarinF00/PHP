@@ -8,32 +8,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-<?php
-require_once "navigation.php";
-?>
+
 
     <div class="wrapper fadeInDown">
         <div id="formContent">
-            <h3>Login to MUFC OLX Shop</h3>
+
             <form action="<?php echo APPLICATION_PATH?>index.php" method="post">
                 <input type="text" id="login" class="fadeIn second" name="username" placeholder="username">
                 <input type="password" id="password" class="fadeIn third" name="password" placeholder="password">
-                <br>
-                <button  type="submit" class="loginButton fadeIn fourth" value="Login">Login</button>
+                <input type="submit" class="fadeIn fourth" value="Login"/>
                 <a href="<?php echo APPLICATION_PATH?>index.php?register=true">No registration?</a>
             </form>
-            <h4>Created by Marin Filipov</h4>
         </div>
     </div>
 
-<?php
-require_once "footer.php";
-?>
+
 </body>
 </html>
 <style>
     body {
-        background-image: url("https://live.staticflickr.com/2877/33823450815_411667305b_b.jpg") ;
+        background-image: url("http://excelpro.soccer/wp-content/uploads/2020/09/Epic-Soccer-Training-Review-29.jpg") ;
         background-attachment: fixed;
         background-size: 100% 100%;
         background-repeat: no-repeat;
@@ -54,14 +48,6 @@ require_once "footer.php";
         margin: 40px 8px 10px 8px;
         color: #cccccc;
     }
-    .loginButton {
-        margin-top: 10px;
-        margin-bottom: 30px;
-    }
-    h3 {
-        margin-bottom: 30px;
-    }
-
 
 
 
@@ -75,24 +61,19 @@ require_once "footer.php";
         width: 100%;
         min-height: 100%;
         padding: 20px;
-
     }
 
     #formContent {
         -webkit-border-radius: 10px 10px 10px 10px;
         border-radius: 10px 10px 10px 10px;
+        background: #fff;
+        padding: 30px;
         width: 90%;
         max-width: 450px;
         position: relative;
         -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
         box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
         text-align: center;
-        background-color: #f5f186;
-        background-image: linear-gradient(315deg, darkred 0%, #000000 130%);
-        height: 300px;
-        justify-items: center;
-        padding-top: 80px;
-        color:whitesmoke;
     }
     .fadeInDown {
         -webkit-animation-name: fadeInDown;
